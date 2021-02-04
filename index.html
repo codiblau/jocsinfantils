@@ -5,10 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
-    prova2
+    <img src="assets/img/banana.jpg" alt="banana">
+    <img src="assets/img/grape.png" alt="grape">
+    <img src="assets/img/orange.png" alt="orange">
+    <audio id="beep">
+        <source src="assets/audio/beep2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        (function () {
+            document.querySelectorAll("img").forEach(img => {
+                img.addEventListener("click", function () {
+                    console.log('holaaa');
+                    const audio = document.querySelector("#beep");
+                    audio.play();
+                })
+            })
+        })()
+
+    </script>
 </body>
 
 </html>
