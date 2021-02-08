@@ -72,8 +72,49 @@ export default {
           nom: "SÍNDRIA",
           url: "img/watermelon.jpg",
         },
+        {
+          nom: "CORN FLAKES",
+          url: "img/cornflakes.jpg",
+        },
+        {
+          nom: "GALLETA MARIA",
+          url: "img/galletamaria.jpg",
+        },
+        {
+          nom: "QUELITA",
+          url: "img/quelita.jpg",
+        },
+        {
+          nom: "FORMATGE",
+          url: "img/formatge.jpeg",
+        },
+        {
+          nom: "PASTANAGA",
+          url: "img/pastanaga.jpg",
+        },
+        {
+          nom: "ALBERGÍNIA",
+          url: "img/alberginia.jpg",
+        },
+        {
+          nom: "ESPÀRREC",
+          url: "img/esparrec.jpg",
+        },
+        {
+          nom: "CARABASSÓ",
+          url: "img/carabasso.jpg",
+        },
+        {
+          nom: "XAMPINYÓ",
+          url: "img/mushrooms.jpg",
+        },
       ],
     };
+  },
+  created() {
+    this.fruites.sort(function (a, b) {
+      return 0.5 - Math.random();
+    });
   },
   methods: {
     beep() {
