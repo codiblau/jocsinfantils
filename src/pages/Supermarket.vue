@@ -91,6 +91,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 img {
@@ -99,6 +100,7 @@ img {
   height: 200px;
   border: 1px solid #000;
   object-fit: cover;
+  touch-action: manipulation;
 }
 
 .background {
@@ -110,6 +112,7 @@ img {
   flex-wrap: wrap;
   row-gap: 10px;
   column-gap: 10px;
+  touch-action: manipulation;
 }
 
 .counter {
